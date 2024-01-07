@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url('img/UbuntuMono-Bold.woff2') format('woff2'),
+        url('img/UbuntuMono-Bold.woff') format('woff'),
+        url('img/UbuntuMono-Bold.svg#UbuntuMono-Bold') format('svg'),
+        url('img/UbuntuMono-Bold.svg.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --font: 'Ubuntu Mono', monospace, arial;
+
+    --skin1: #E03D06;
+    --skin2: #FF7546;
+
+    --back: #333;
+    --border: #ff0;
+}
+@keyframes background {
+    0%   {background-color: var(--back1);}
+    50%  {background-color: var(--back2);}
+    100% {background-color: var(--back1);}
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(#111);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--skin2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--skin1);
+}
+body {
+    background-color: #111;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+#title {
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 100%;
+    font-size: 4em;
+    font-family: var(--font);
+    color: var(--skin2);
+    text-align: center;
+}
+.button {
+    position: absolute;
+    left: calc(10% - 5px);
+    width: 80%;
+    line-height: 1.5em;
+    height: 1.5em;
+    font-family: var(--font);
+    text-align: center;
+    border: var(--skin1) solid 5px;
+    cursor: pointer;
+}
+.button:hover {
+    color: var(--skin2);
+    border: var(--skin2) solid 5px;
+}
+#select-button {
+    top: calc(50vh - 2.25em);
+    font-size: 4em;
+    color: #ff0;
+}
+#youtube-button {
+    top: calc(50vh - 0.75em);
+    font-size: 2em;
+    color: var(--skin1);
+}
+#discord-button {
+    top: calc(50vh + 1.25em);
+    font-size: 2em;
+    color: var(--skin1);
+}
+#nomobile {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: red;
+    font-size: 40px;
+    background-color: #111;
+    font-family: var(--font);
+}
+@media only screen and (max-width: 575px) {
+    #nomobile {
+        display: block;
+    }
+}
+@media only screen and (max-height: 300px) {
+    #nomobile {
+        display: block;
+    }
+}
+#select {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #555;
+    overflow: auto;
+}
+.game {
+    width: calc(100% - 40px);
+    height: 200px;
+    color: #111;
+    font-family: var(--font);
+    font-size: 4em;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.game:hover {
+    background-color: #333;
+}
+.game_img {
+    display: block;
+    float: left;
+    height: 200px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
