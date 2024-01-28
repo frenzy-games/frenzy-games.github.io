@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url('/img/UbuntuMono-Bold.woff2') format('woff2'),
+        url('/img/UbuntuMono-Bold.woff') format('woff'),
+        url('/img/UbuntuMono-Bold.svg#UbuntuMono-Bold') format('svg'),
+        url('/img/UbuntuMono-Bold.svg.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --font: 'Ubuntu Mono', monospace, arial;
+
+    --skin1: #E03D06;
+    --skin2: #FF7546;
+
+    --back: #333;
+    --border: #ff0;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.frame {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.fstyle {
+    background-color: var(--back);
+}
+
+.title {
+    color: var(--skin2);
+    width: 100%;
+    font-size: 4em;
+    line-height: 1.5em;
+    text-align: center;
+    font-family: var(--font);
+}
+.table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: separate; 
+    border-spacing: 20px;
+}
+.table_button {
+    font-size: 3em;
+    line-height: 1.5em;
+    text-align: center;
+    font-family: var(--font);
+    background-color: var(--skin1);
+    color: var(--back);
+    padding: 0 20px 0 20px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.table_button:hover {
+    background-color: var(--skin2);
+}

@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Ubuntu Mono';
-    src: url('img/UbuntuMono-Bold.woff2') format('woff2'),
-        url('img/UbuntuMono-Bold.woff') format('woff'),
-        url('img/UbuntuMono-Bold.svg#UbuntuMono-Bold') format('svg'),
-        url('img/UbuntuMono-Bold.svg.ttf') format('ttf');
+    src: url('files/UbuntuMono-Bold.woff2') format('woff2'),
+        url('files/UbuntuMono-Bold.woff') format('woff'),
+        url('files/UbuntuMono-Bold.svg#UbuntuMono-Bold') format('svg'),
+        url('files/UbuntuMono-Bold.svg.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
